@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coletive.se</title>
+  </head>
+  <body>
+    <div id="main" class="wrapper">
+  	  <div id="content">
+  		<center><h2>Coletive.se</h2></center>
+  		<p>
+  		Olá, somos o grupo Coletive.se, nossa proposta é levar a compra coletiva até o seu bairro,
+  		de maneira que você possa conhecer novos produtos e participar de incriveis promoções que estão realmente próximas a você,
+  		ajudando com isso a promover fornecedores locais que por sua vez ajudam no desenvolvimento de sua região.
+  		</p>
+  		<p>No momento ainda não iniciamos nossas operações, se você quer ser avisado quando inicarmos, cadastre seu e-mail abaixo:</p>
+  		<center>
+    		<div id="form">
+    		  <%= form_for :interessado, :remote => true, :url => {:action => 'participar'} do |f| %>
+    		    <%= f.email_field :email, size: 30, :placeholder => "Digite aqui seu email." %>
+    		    <%= f.submit "Enviar", :class => 'fancy_button'%>
+    		  <%end%>
+    		</div>
+  		</center>
+  	  </div>
+	  
+	    <div id="participacao_confirmada">
+	      
+	    </div>
+    </div>
+  </body>
+</html>
