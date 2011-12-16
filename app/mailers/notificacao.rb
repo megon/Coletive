@@ -4,7 +4,7 @@ class Notificacao < ActionMailer::Base
   
   def enviar interessado    
     @interessado = interessado
-    mail :to => "mrmarcondes@gmail.com"
+    mail :to => "mrmarcondes@gmail.com;gnumarcelo@gmail.com;dnlfukuda@gmail.com;patricia@megon.com.br"
     
   end
 end
