@@ -2,11 +2,29 @@
 <html>
   <head>
     <title>Coletive.se</title>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-17302208-6']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
   </head>
   <body>
-    <div id="main" class="wrapper">
+    <div id="top-bar" />
+    <div id="main" class="wrapper">      
   	  <div id="content">
-  		<center><h2>Coletive.se</h2></center>
+  	    <div id="logo">
+    			<a href="/">
+    				<img src="/assets/logo.png" alt="Logo">
+    			</a>
+  	    </div>
   		<p>
   		Olá, somos o grupo Coletive.se, nossa proposta é levar a compra coletiva até o seu bairro,
   		de maneira que você possa conhecer novos produtos e participar de incriveis promoções que estão realmente próximas a você,
@@ -17,7 +35,7 @@
     		<div id="form">
     		  <%= form_for :interessado, :remote => true, :url => {:action => 'participar'} do |f| %>
     		    <%= f.email_field :email, size: 30, :placeholder => "Digite aqui seu email." %>
-    		    <%= f.submit "Enviar", :class => 'fancy_button'%>
+    		    <%= f.submit "Enviar", :class => 'fancy_button', :disable_with => "Aguarde..."%>
     		  <%end%>
     		</div>
   		</center>
