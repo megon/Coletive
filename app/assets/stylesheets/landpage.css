@@ -1,8 +1,17 @@
 body {
+	/*background-image: url("http://webdesignfan.com/wp-content/themes/webdesignfan/images/commentFormBG.png")*/
 	background-image: url('background.png');
 	background-color: #F2F2F4;
 	color: #616D60;
 	font-family: "Lucida Sans Unicode","Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
+}
+
+.wrapper {
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    width: 760px;
 }
 
 #top-bar {
@@ -10,35 +19,56 @@ body {
 	top: 0;
 	width: 100%;
 	height: 25px;
-	background: url('top-bar.png') repeat-x;
+	background:url('top-bar.png') repeat-x;
 }
 
-.wrapper {
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    width: 960px;
+#footer {
+	margin-top: 24px;
+	height: 46px;
+	text-align: center;
 }
+	#footer  p {
+		line-height: 0.6em;
+		font-size: 0.6em;
+		text-shadow: 0 -1px 0 #FFF;
+		color: #BCBABA;		
+	}
+	
+	#footer p a {
+		text-decoration: none;
+		color: #777;
+	}
 
 #logo {
 	text-align: center;
+	margin-top: 54px;
 }
 	#logo img {
 		vertical-align: middle;
 	}
 
+#content_box {
+	margin-top: 54px;
+	background-color: #FFFFFF;
+	padding: 54px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), inner 0px 0px 85px rgba(0,0,0,.1);;
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), inset 0px 0px 85px rgba(0,0,0,.1);
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), inset 0px 0px 85px rgba(0,0,0,.1);
+}
+	
 #content form {
-	margin-top: 35px;
+	margin-top: 48px;
 }
 
+
 #content p  {
-	margin-top: 2em;
+	margin-top: 0px;
 }
 
 #content p {
-	margin-left: 155px;
-	margin-right: 155px;
 	font-size: 16px;
 	line-height: 1.5;
 	text-shadow: 1px 1px 0 #FFFFFF;
@@ -46,7 +76,7 @@ body {
 }
 
 
-input[type=email] {
+input[type=text] {
 	font-size: 16px;
 	color: #CCCCCC;
 	-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
@@ -56,17 +86,13 @@ input[type=email] {
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16) inset;
 }
 
-	input[type=email]:hover {
+	input[type=text]:hover {
 		box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.16) inset;
 	}
 
-	input[type=email]:focus {
+	input[type=text]:focus {
 		color: #AEB2AF;
 		box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.16) inset, 0 0 10px rgba(106, 211, 74,0.3);
-	}
-	
-	#confirmacao {
-		font-size: 18px;
 	}
 	
 
