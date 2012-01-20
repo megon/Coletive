@@ -25,11 +25,11 @@
     		  <%= form_for :interessado, :remote => true, :url => {:action => 'participar'} do |f| %>
     		  
     		    <div id="localidades">
-      		    <%= f.check_box :lapa%> <%= f.label "Lapa"%><br>
+      		    <%= f.check_box :lapa%> <%= f.label :lapa, "Lapa"%><br>
       		    <%= f.check_box :perdizes%> <%= f.label "Perdizes"%><br>
-      		    <%= f.check_box :vila_leopoldina%> <%= f.label "Vila Leopoldina"%><br>
-      		    <%= f.check_box :vila_madalena%> <%= f.label "Vila Madalena"%><br>
-      		    <%= f.check_box :vila_romana%> <%= f.label "Vila Romana"%><br>
+      		    <%= f.check_box :vila_leopoldina%> <%= f.label :vila_leopoldina, "Vila Leopoldina"%><br>
+      		    <%= f.check_box :vila_madalena%> <%= f.label :vila_madalena, "Vila Madalena"%><br>
+      		    <%= f.check_box :vila_romana%> <%= f.label :vila_romana, "Vila Romana"%><br>
       		    <%= f.check_box :outro%> <%= f.label "Outro"%> <%=f.text_field :qual, size: 30, :placeholder => "Digite aqui seu bairro.", :style => style="display:none;"%>
     		    </div>
     		    <%= f.email_field :email, size: 30, :placeholder => "Digite aqui seu email." %>
