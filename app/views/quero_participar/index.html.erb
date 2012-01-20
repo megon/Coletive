@@ -19,10 +19,19 @@
 				de maneira que você possa conhecer novos produtos e participar de incriveis promoções que estão realmente próximas a você,
 				ajudando com isso a promover fornecedores locais que por sua vez ajudam no desenvolvimento de sua região.
 			</p>
-			<p>No momento ainda não iniciamos nossas operações, se você quer ser avisado quando inicarmos, cadastre seu e-mail abaixo:</p>
+			<p>No momento ainda não iniciamos nossas operações, se você quiser ser avisado quando inicarmos, informe seu bairro e e-mail abaixo:</p>
 			<center>
     		<div id="form">
     		  <%= form_for :interessado, :remote => true, :url => {:action => 'participar'} do |f| %>
+    		  
+    		    <div id="localidades">
+      		    <%= f.check_box :lapa%> <%= f.label "Lapa"%><br>
+      		    <%= f.check_box :perdizes%> <%= f.label "Perdizes"%><br>
+      		    <%= f.check_box :vila_leopoldina%> <%= f.label "Vila Leopoldina"%><br>
+      		    <%= f.check_box :vila_madalena%> <%= f.label "Vila Madalena"%><br>
+      		    <%= f.check_box :vila_romana%> <%= f.label "Vila Romana"%><br>
+      		    <%= f.check_box :outro%> <%= f.label "Outro"%> <%=f.text_field :qual, size: 30, :placeholder => "Digite aqui seu bairro.", :style => style="display:none;"%>
+    		    </div>
     		    <%= f.email_field :email, size: 30, :placeholder => "Digite aqui seu email." %>
     		    <%= f.submit "Enviar", :class => 'fancy_button', :disable_with => "Aguarde..."%>
     		  <%end%>
@@ -36,6 +45,18 @@
 		<p>Coletive.se - São Paulo - Brasil</p>
 		<p>desenvolvido por <a href="http://www.megon.com.br">Megon</a></p>
 	</div>
+
+  <script>
+    $("#interessado_outro").click(function(){
+      if ($("#interessado_outro:checked").val() == 1){
+        $("#interessado_qual").fadeIn('fast');
+      }
+      else{
+        $("#interessado_qual").fadeOut('fast');
+      }
+
+    });
+  </script>
 
   <script type="text/javascript">
 

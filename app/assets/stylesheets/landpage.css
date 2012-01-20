@@ -60,7 +60,15 @@ body {
 }
 	
 #content form {
-	margin-top: 48px;
+	margin-top: 36px;
+}
+
+#localidades {
+	text-align: left;
+	margin-left: 0px;
+  width: 344px;
+	height: 200px;
+	line-height: 1.7;
 }
 
 
@@ -76,7 +84,7 @@ body {
 }
 
 
-input[type=email] {
+input[type=email], input[type=text] {
 	font-size: 16px;
 	color: #CCCCCC;
 	-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
@@ -86,11 +94,11 @@ input[type=email] {
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16) inset;
 }
 
-	input[type=email]:hover {
+	input[type=email]:hover, input[type=text]:hover {
 		box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.16) inset;
 	}
 
-	input[type=email]:focus {
+	input[type=email]:focus, input[type=text]:focus{
 		color: #AEB2AF;
 		box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.16) inset, 0 0 10px rgba(106, 211, 74,0.3);
 	}
