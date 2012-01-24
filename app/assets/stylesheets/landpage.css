@@ -47,6 +47,7 @@ body {
 		vertical-align: middle;
 	}
 
+
 #content_box {
 	margin-top: 54px;
 	background-color: #FFFFFF;
@@ -58,6 +59,8 @@ body {
 	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), inset 0px 0px 85px rgba(0,0,0,.1);
 	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), inset 0px 0px 85px rgba(0,0,0,.1);
 }
+
+
 	
 #content form {
 	margin-top: 36px;
@@ -66,7 +69,7 @@ body {
 #localidades {
 	text-align: left;
 	margin-left: 0px;
-  width: 344px;
+  width: 360px;
 	height: 200px;
 	line-height: 1.7;
 }
