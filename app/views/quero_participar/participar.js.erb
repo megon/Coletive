@@ -1,2 +1,7 @@
-$("#form").html('');
-$("#form").append('<span id="confirmacao">Seu email foi cadastrado com sucesso!</span>');
+<%if flash[:notice] %>
+	$("#form").html('');
+	$("#form").append('<div class="message"><span id="confirmacao"><%= flash[:notice] %></span></div>');
+<% else %>
+	$("#message").html('');
+	$("#message").append('<div class="message"><span id="confirmacao"><%= flash[:error] %></span></div>');
+<% end %>

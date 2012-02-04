@@ -3,7 +3,11 @@ class QueroParticiparController < ApplicationController
   
   def participar
     @interessado = Interessado.new(params[:interessado])
-    @interessado.save
-    respond_with @interessado
+    if @interessado.save
+      flash[:notice] = "Seu email foi cadastrado com sucesso!"
+    else
+      flash[:error] = @interessado.errors.full_messages.first
+    end
+      respond_with @interessado
   end
 end

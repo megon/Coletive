@@ -33,10 +33,15 @@
       		    <%= f.check_box :outro%> <%= f.label "Outro"%> <%=f.text_field :qual, size: 30, :placeholder => "Digite aqui seu bairro.", :style => style="display:none;"%>
     		    </div>
     		    <%= f.email_field :email, size: 30, :placeholder => "Digite aqui seu email." %>
-    		    <%= f.submit "Enviar", :class => 'fancy_button', :disable_with => "Aguarde..."%>
+    		    <%= f.submit "Enviar", :class => 'fancy_button', :disable_with => "Aguarde..."%><br>
+    		    <div id="message">
+    		    </div>
     		  <%end%>
     		</div>
 			</center>
+	
+	    
+      
 	
 		</div> <!-- content_box -->
 	  </div> <!-- content -->
