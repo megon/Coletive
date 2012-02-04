@@ -33,7 +33,7 @@
       		    <%= f.check_box :outro%> <%= f.label "Outro"%> <%=f.text_field :qual, size: 30, :placeholder => "Digite aqui seu bairro.", :style => style="display:none;"%>
     		    </div>
     		    <%= f.email_field :email, size: 30, :placeholder => "Digite aqui seu email." %>
-    		    <%= f.submit "Enviar", :class => 'fancy_button', :disable_with => "Aguarde..."%><br>
+    		    <%= f.submit "Enviar", :id => 'enviar', :class => 'fancy_button', :disable_with => "Aguarde..."%><br>
     		    <div id="message">
     		    </div>
     		  <%end%>
@@ -60,6 +60,10 @@
         $("#interessado_qual").fadeOut('fast');
       }
 
+    });
+    
+    $("#enviar").click(function(){
+      $("#message").html('');
     });
   </script>
 
